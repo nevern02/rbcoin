@@ -1,0 +1,11 @@
+{
+  "ruby.useBundler": true,
+  "ruby.codeCompletion": "rcodetools",
+  "ruby.format": "rubocop",
+  "ruby.intellisense": "rubyLocate",
+  "ruby.lint": {
+
+  "rubocop": { "useBundler": true}
+  },
+  "ruby.useLanguageServer": true
+}
