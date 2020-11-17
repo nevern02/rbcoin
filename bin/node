@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "rbcoin"
+
+blockchain = RbCoin::Blockchain.new
+server     = RbCoin::Server.new(blockchain: blockchain, connection_pool: nil, p2p_protocol: nil)
+
+server.listen

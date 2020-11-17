@@ -12,7 +12,7 @@ module RbCoin
       @chain                = []
       @pending_transactions = []
 
-      puts "Creating genesis block."
+      RbCoin.logger.info("Creating genesis block.")
       @chain.push(new_block)
     end
 
@@ -53,7 +53,7 @@ module RbCoin
 
       @chain.push(block)
 
-      puts "Found a new block: #{block}"
+      RbCoin.logger.info("Found a new block: #{block}")
     end
   end
 end
